@@ -38,7 +38,7 @@ function createConnectionConfig(tenant) {
     client: process.env.DB_CLIENT,
     connection: {
       host: tenant.db_host,
-      port: tenant.db_port,
+      port: 3306,
       user: tenant.db_username,
       database: tenant.db_name,
       password: tenant.db_password

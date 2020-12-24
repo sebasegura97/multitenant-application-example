@@ -6,7 +6,7 @@ import * as userService from './services/users';
 import { connectAllDb } from './connectionManager';
 import * as connectionResolver from './middlewares/connectionResolver';
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 
 const app = express();
 
